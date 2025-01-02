@@ -101,7 +101,7 @@ const handleClock = (
 export const fetchBalance = async () => {
     const connection = new Connection(`${SOLANA_API}`);
     const walletAddress = window.localStorage.address;
-    const tokenMintAddress = 'FhQFJYweUUNLWwvs3hV3Z8r5nyw8ezjryUVGHffxW4iU';
+    const tokenMintAddress = '3jngLJsZ7aHok3oUwsyoRUH5Zvfg1GwyHGGC53kgWEjs';
 
     const walletPublicKey = new PublicKey(walletAddress);
     const tokenMintPublicKey = new PublicKey(tokenMintAddress);
