@@ -1,0 +1,61 @@
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* For Webkit browsers */
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black; /* Change this to your desired color */
+    cursor: pointer;
+    border: 4px solid #fff; /* Optional: border around the thumb */
+}
+
+input[type="range"] {
+  border: 1px black solid;
+  height: 5px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff; /* White border around the radio button */
+    background-color: white; /* Transparent background */
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top:2.5px;
+    left: 2.5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: black; /* Inner circle color */
+  }
+
+.coodinate-line {
+  position: relative;
+}
+
+.coodinate-line::before, .coodinate-line::after {
+  position: absolute;
+  content: '';
+  height: 100px;
+  width: 0.1px;
+  background-color: #DA7211;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.coodinate-line::before {
+  width: 100px;
+  height: 0.1px;
+  right: auto;
+}
